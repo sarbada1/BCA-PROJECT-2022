@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+/* *****************header********** */
+header{
+    height: 17%;
+    width: 100%;
+    background-color: rgb(61, 222, 29);
+    position: relative;
+    display: flex;
+       
+}
+/* *****************left-section********** */
+header .left-section{
+    width: 20%;
+    display: flex;
+   
+}
+header .left-section .logo{
+    margin: 0px 9px 0px 30px;
+    
+}
+header .left-section .logo img{
+    height: 70px;
+    width: 70px;
+    margin:20px 0 0 10px;
+}
+header .left-section .logo-name{
+    margin-top: 4px;
+    
+}
+header .left-section .logo-name .big-name{
+    font-size: 38px;
+    color: #de4e8d;
+    font-family: cursive;
+}
+header .left-section .logo-name .small-name{
+    font-size:20px;
+    color:#856573;
+    margin-left: 30px;
+}
+/* *****************end left-section********** */
+/* *****************mid-section********** */
+header .mid-section{
+    width: 50%;
+    position: absolute;
+    left: 20%;
+    justify-content: center;
+    
+}
+header .mid-section ul{
+    display: flex;
+
+}
+header .mid-section ul li{
+    list-style: none;
+    margin:18px 0;
+}
+header .mid-section ul li a{
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    padding:10px 0;
+}
+header .mid-section ul li a:hover{
+    border-bottom:2px solid red;
+}
+/* *****************end mid-section********** */
+/* *****************right-section********** */
+header .right-section{
+    position:absolute;
+    right: 71px;
+    top: 27px;
+
+}
+header .right-section i{
+    margin-right: 10px;
+    font-size: 30px;
+    
+}
+header .right-section button{
+    width: 100px;
+    height: 40px;
+    border-radius:8px;
+    background: #f7a635;
+    border:0;
+    outline:none;
+
+}
+header .right-section button a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+header .right-section button:hover{
+    opacity: 0.8;
+}
+header .right-section button:hover a{
+    color:red;
+    border-bottom:2px solid blue;
+
+}
+/* *****************end right-section********** */
