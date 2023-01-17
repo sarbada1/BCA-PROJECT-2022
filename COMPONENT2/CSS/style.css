@@ -106,3 +106,119 @@ header .right-section button:hover a{
 
 }
 /* *****************end right-section********** */
+/* *************end header************* */
+
+/* ****************main start************* */
+main{
+    height: 100%;
+    background-color: rgb(251, 253, 251);
+    /* position: absolute; */
+    width: 100%;
+}
+main .first-main{
+    background-color: rgb(78, 243, 78);
+    height: 55%;
+    position: absolute;
+    width: 100%;
+    top: 13%;
+}
+main .first-main .search{
+   display: flex;
+   justify-content: center;
+}
+main .first-main .search input{
+    width: 400px;
+    height: 42px;
+    background-color: #332c2c;
+    color: white;
+    border-radius: 12px 0 0 12px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+main .first-main .search input:hover{
+    border: 1px solid gold;
+}
+::placeholder{
+    font-size: 18px;
+    font-weight: bold;
+}
+main .first-main .search i{
+    background-color: #f7a635;
+    height: 42px;
+    width: 50px;
+    font-size: 35px;
+    color: white;
+   border-radius: 0 12px 12px 0;
+   text-align: center;
+
+}
+main .first-main .content{
+    display: flex;
+    margin-left: 125px;
+    
+}
+main .first-main .content .text{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+
+}
+main .first-main .content .text .small{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #3d333394;
+
+}
+main .first-main .content .image{
+   margin-left: 50px;
+   
+}
+main .first-main .content .image img{
+      height: 380px;
+      width: 700px;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+main .second-main{
+    height: 50%;
+    width: 100%;
+    background-color: pink;
+    position: absolute;
+    top: 68%;
+    
+}
+main .second-main .container h1{
+
+}
+main .second-main .container .images{
+    display: flex;
+    justify-content: space-between;
+
+}
+main .second-main .container .images .box1{
+    width: 15%;
+    border: 1px solid gold;
+
+
+}
+main .second-main .images .box1 img{
+    height: 200px;
+    width: 100%;
+
+}
+main .second-main .container .images .box1 .text{
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    height: 30px;
+    width: 100%;
+
+}
+
+
+/* ****************end main start************* */
