@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap');
 body{
     margin: 0;
     padding: 0;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 /* *****************header********** */
 header{
-    height: 17%;
+    min-height: 17%;
     width: 100%;
     background-color: rgb(61, 222, 29);
     position: relative;
@@ -34,7 +36,8 @@ header .left-section .logo-name{
 header .left-section .logo-name .big-name{
     font-size: 38px;
     color: #de4e8d;
-    font-family: cursive;
+    font-family: 'Kaushan Script';
+
 }
 header .left-section .logo-name .small-name{
     font-size:20px;
@@ -52,19 +55,39 @@ header .mid-section{
 }
 header .mid-section ul{
     display: flex;
+    position: relative;
 
 }
 header .mid-section ul li{
     list-style: none;
     margin:18px 0;
+    /* position: relative; */
 }
 header .mid-section ul li a{
     text-decoration: none;
-    margin: 0 50px;
+    margin: 0 25px;
     font-size: 22px;
     color: black;
     font-weight: bold;
     padding:10px 0;
+    /* position: relative; */
+}
+header .mid-section ul li ul{
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+}
+header .mid-section ul li ul li{
+    background: white;
+    height: 50px;
+    width: 150px;
+    z-index: 1;
+    
+}
+header .mid-section ul li ul li a{
+    font-size: 14px;
 }
 header .mid-section ul li a:hover{
     border-bottom:2px solid red;
@@ -116,11 +139,11 @@ main{
     width: 100%;
 }
 main .first-main{
-    background-color: rgb(78, 243, 78);
     height: 55%;
     position: absolute;
     width: 100%;
     top: 13%;
+    background: linear-gradient(to right, rgba(231, 31, 144, 0.708), rgba(44, 237, 26, 0.692));
 }
 main .first-main .search{
    display: flex;
@@ -144,13 +167,18 @@ main .first-main .search input:hover{
     font-size: 18px;
     font-weight: bold;
 }
-main .first-main .search i{
-    background-color: #f7a635;
-    height: 42px;
-    width: 50px;
+main .first-main .search button{
+     background-color: #f7a635;
+     border-radius: 0 12px 12px 0;
+     border: 0;
+     outline: none;
+}
+main .first-main .search button i{
+    /* background-color: #f7a635; */
+    height: 37px;
+    width: 48px;
     font-size: 35px;
-    color: white;
-   border-radius: 0 12px 12px 0;
+    color: rgb(8, 8, 8);
    text-align: center;
 
 }
@@ -163,13 +191,14 @@ main .first-main .content .text{
     font-size: 50px;
     font-weight: bold;
     margin-top: 50px;
+    font-family: 'Kaushan Script';
 
 }
 main .first-main .content .text .small{
     font-size: 20px;
     margin-top: 15px;
     color: #3d333394;
-
+    font-family: 'Poppins', sans-serif;
 }
 main .first-main .content .image{
    margin-left: 50px;
