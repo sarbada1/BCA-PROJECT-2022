@@ -1,253 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-}
-/* *****************header********** */
-header{
-    min-height: 17%;
-    width: 100%;
-    background-color: rgb(61, 222, 29);
-    position: relative;
-    display: flex;
-       
-}
-/* *****************left-section********** */
-header .left-section{
-    width: 20%;
-    display: flex;
-   
-}
-header .left-section .logo{
-    margin: 0px 9px 0px 30px;
-    
-}
-header .left-section .logo img{
-    height: 70px;
-    width: 70px;
-    margin:20px 0 0 10px;
-}
-header .left-section .logo-name{
-    margin-top: 4px;
-    
-}
-header .left-section .logo-name .big-name{
-    font-size: 38px;
-    color: #de4e8d;
-    font-family: 'Kaushan Script';
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
 
+:root {
+  --green: #27ae60;
+  --black:#2c2c54;
 }
-header .left-section .logo-name .small-name{
-    font-size:20px;
-    color:#856573;
-    margin-left: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+  text-decoration: none;
 }
-/* *****************end left-section********** */
-/* *****************mid-section********** */
-header .mid-section{
-    width: 50%;
-    position: absolute;
-    left: 20%;
-    justify-content: center;
-    
+*::selection {
+  background-color: var(--green);
+  color: white;
 }
-header .mid-section ul{
-    display: flex;
-    position: relative;
-
+html{
+   font-size: 62.%;
+   overflow-x: hidden;
+   scroll-padding-top: 6.5rem;
+   scroll-behavior: smooth;
 }
-header .mid-section ul li{
-    list-style: none;
-    margin:18px 0;
-    /* position: relative; */
-}
-header .mid-section ul li a{
-    text-decoration: none;
-    margin: 0 25px;
-    font-size: 22px;
-    color: black;
-    font-weight: bold;
-    padding:10px 0;
-    /* position: relative; */
-}
-header .mid-section ul li ul{
-    display: flex;
-    flex-direction: column; 
-    position: absolute;
-    top: 0;
-    /* right: 0; */
-}
-header .mid-section ul li ul li{
-    background: white;
-    height: 50px;
-    width: 150px;
-    z-index: 1;
-    
-}
-header .mid-section ul li ul li a{
-    font-size: 14px;
-}
-header .mid-section ul li a:hover{
-    border-bottom:2px solid red;
-}
-/* *****************end mid-section********** */
-/* *****************right-section********** */
-header .right-section{
-    position:absolute;
-    right: 71px;
-    top: 27px;
-
-}
-header .right-section i{
-    margin-right: 10px;
-    font-size: 30px;
-    
-}
-header .right-section button{
-    width: 100px;
-    height: 40px;
-    border-radius:8px;
-    background: #f7a635;
-    border:0;
-    outline:none;
-
-}
-header .right-section button a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-header .right-section button:hover{
-    opacity: 0.8;
-}
-header .right-section button:hover a{
-    color:red;
-    border-bottom:2px solid blue;
-
-}
-/* *****************end right-section********** */
-/* *************end header************* */
-
-/* ****************main start************* */
-main{
-    height: 100%;
-    background-color: rgb(251, 253, 251);
-    /* position: absolute; */
-    width: 100%;
-}
-main .first-main{
-    height: 55%;
-    position: absolute;
-    width: 100%;
-    top: 13%;
-    background: linear-gradient(to right, rgba(231, 31, 144, 0.708), rgba(44, 237, 26, 0.692));
-}
-main .first-main .search{
-   display: flex;
-   justify-content: center;
-}
-main .first-main .search input{
-    width: 400px;
-    height: 42px;
-    background-color: #332c2c;
-    color: white;
-    border-radius: 12px 0 0 12px;
-    text-align: center;
-    border: 0;
-    outline: none;
-    font-size: 20px;
-}
-main .first-main .search input:hover{
-    border: 1px solid gold;
-}
-::placeholder{
-    font-size: 18px;
-    font-weight: bold;
-}
-main .first-main .search button{
-     background-color: #f7a635;
-     border-radius: 0 12px 12px 0;
-     border: 0;
-     outline: none;
-}
-main .first-main .search button i{
-    /* background-color: #f7a635; */
-    height: 37px;
-    width: 48px;
-    font-size: 35px;
-    color: rgb(8, 8, 8);
-   text-align: center;
-
-}
-main .first-main .content{
-    display: flex;
-    margin-left: 125px;
-    
-}
-main .first-main .content .text{
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 50px;
-    font-family: 'Kaushan Script';
-
-}
-main .first-main .content .text .small{
-    font-size: 20px;
-    margin-top: 15px;
-    color: #3d333394;
-    font-family: 'Poppins', sans-serif;
-}
-main .first-main .content .image{
-   margin-left: 50px;
-   
-}
-main .first-main .content .image img{
-      height: 380px;
-      width: 700px;
-}
-.container{
-    width: 95%;
-    margin: auto;
-}
-
-main .second-main{
-    height: 50%;
-    width: 100%;
-    background-color: pink;
-    position: absolute;
-    top: 68%;
-    
-}
-main .second-main .container h1{
-
-}
-main .second-main .container .images{
+.header-1{
+    background:#eee ;
     display: flex;
     justify-content: space-between;
-
+    padding: 2rem 9%;
+    align-items: center;
 }
-main .second-main .container .images .box1{
-    width: 15%;
-    border: 1px solid gold;
-
-
+.logo{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;    
 }
-main .second-main .images .box1 img{
-    height: 200px;
-    width: 100%;
-
+.logo i{
+    padding-right: .5rem;
+    color: var(--green);
 }
-main .second-main .container .images .box1 .text{
+.header-1 .search-box-container{
+    display: flex;
+    height: 2.5rem;
+}
+.header-1 .search-box-container #search-box{
+    height: 100%;
+    /* width: 100%; */
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    border: .1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+}
+.header-1 .search-box-container label{
+    height: 100%;
+    width: 3.5rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--green);
     text-align: center;
-    font-size: 20px;
-    background-color: white;
-    height: 30px;
-    width: 100%;
+    cursor: pointer;
+}
+.header-1 .search-box-container input{
+    width: 80%;
+}
+.header-1 .search-box-container label:hover{
+    background-color: var(--black);
+}
+.header-2{
+    background:#fff ;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.header-2 .navbar a{
+    font-size:1.5rem ;
+    padding:.5rem 2rem ;
+    border-radius: .5rem;
+    color: var(--black);
 
 }
+.header-2 .navbar a:hover{
+    background-color: var(--green);
+    color: #fff;
+}
+.header-2 .icons a{
+    color: var(--black);
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin: 0 1rem;
+}
+.header-2 .icons a:hover{
+    color: var(--green);
+}
+#menu-bar{
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: .1rem solid var(--black);
+    padding: .5rem .8rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
 
+}
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    .header-1,
+    .header-2{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    .header-2 .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:var(--black);
+        padding: 1rem 2rem;
+    }
+    .header-2 .navbar a{
+        font-size: 2.5rem;
+        display: block;
+        text-align: center;
+        background: #fff;
+        padding: 1rem;
+        margin: 1.5rem 0;
 
-/* ****************end main start************* */
+    }
+}
+
+/* *****************header start********** */
+
+/* ****************end header-section************* */
+/* **************** main-section start************* */
+/* **************** main -section end************* */
