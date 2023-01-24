@@ -251,7 +251,112 @@ section {
   background: #fff;
   text-align: center;
 }
+.header .signup-form{
+  position: absolute;
+  top: 110%;
+right: 50rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+  width: 45rem;
+ 
+}
+.header .signup-form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.header .signup-form .box {
+  width: 97%;
+  margin: 0.7rem 0;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+}
+.header .signup-form p {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: var(--light-color);
+}
 
+.header .signup-form p a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+.header .signup-form .name-group{
+  display: flex;
+  width: 100%;
+
+}
+.header .signup-form .name-group input{
+  margin: 0.7rem 0.5rem;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+}
+.header .signup-form label{
+   font-size: 1.5rem;
+   display: flex;
+   padding: 0.7rem 0rem;
+
+}
+.header .signup-form input{
+   width: 100%;
+   background: #eee;
+   border-radius: 0.5rem;
+   padding: 1rem;
+   font-size: 1.6rem;
+   color: var(--black);
+}
+.header .signup-form .btn{
+  width: 50%;
+  background: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.8rem;
+}
+.header .signup-form .gender{
+  display: flex;
+  
+}
+.header .signup-form .gender label{
+  font-size: 1.5rem;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  margin: 0 1rem; 
+}
+.header .signup-form .gender input{
+ width: 2rem;
+ margin-right: 0.7rem;
+}
+.header .signup-form .text p{
+  text-align: left;
+}
+
+.header .signup-form .text p a{
+  color: blue;
+  text-decoration: none;
+}
+.header .signup-form select{
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+}
+.container{
+  width: 95%;
+  margin: auto;
+}
 .header .login-form.active {
   right: 2rem;
   transition: 0.3s linear;
@@ -557,7 +662,75 @@ section {
   font-size: 1.5rem;
   padding: .5rem 0;
 }
+.footer{
+  background: #fff;
 
+}
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+.footer .box-container .box h3 i{
+  color: var(--orange);
+}
+.footer .box-container .box .links{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+.footer .box-container .box .links i{
+    color: var(--orange);
+    padding-right: .5rem;
+}
+.footer .box-container .box .links:hover i{
+  padding-right: 2rem;
+}
+.footer .box-container .box p{
+line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+.footer .box-container .box .share a{
+   height: 4rem;
+   width: 4rem;
+   line-height: 4rem;
+   border-radius: .5rem;
+   font-size: 2rem;
+   color: var(--black);
+   margin-right: .2rem;
+   background: #eee;
+   text-align: center;
+
+}
+.footer .box-container .box .share a:hover{
+  background: var(--orange);
+  color: #fff;
+}
+.footer .box-container .box img{
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
+}
+.footer .credit{
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-top: var(--border);
+}
+.footer .credit span{
+  color: var(--orange);
+}
 /* * ******************media queries************ */
 @media (max-width: 1470px) {
   .products .swiper-wrapper .box {
@@ -627,6 +800,9 @@ section {
 
   .header .shopping-cart {
     width: 90%;
+  }
+  .footer{
+    text-align: center;
   }
 }
 
